@@ -17,7 +17,7 @@ void check(const wstring& Text, const wstring& key, const bool destructCipherTex
         if (destructCipherText) 
             cipherText.front() = tolower(cipherText.front()); 
         decryptedText = cipher.decrypt(cipherText);
-        wcout<<L"KYE: "<<key<<endl;
+        wcout<<L"KEY: "<<key<<endl;
         wcout<<Text<<endl;
         wcout<<cipherText<<endl;
         wcout<<decryptedText<<endl;
